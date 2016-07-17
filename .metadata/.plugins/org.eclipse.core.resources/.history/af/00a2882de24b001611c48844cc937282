@@ -1,0 +1,49 @@
+package org.mittman.generator.member;
+
+import java.time.LocalDate;
+
+public class MemberGeneratorImpl implements MemberGenerator {
+
+	@Override
+	public String generateFirstName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String generateMiddleName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String generateLastName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Gender generateGender() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public LocalDate generateDateOfBirth() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String generateSsn() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Member generateMember() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

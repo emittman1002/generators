@@ -1,0 +1,12 @@
+package org.mittman.generator.member;
+
+import java.time.LocalDateTime;
+
+public interface MemberGenerator {
+	String generateFirstName();
+	String generateMiddleName();
+	String generateLastName();
+
+	LocalDateTime generateDateOfBirth();
+	String generateSsn();
+}

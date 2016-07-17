@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.3.6.RELEASE</version>
+	</parent>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<java.compiler>8.0</java.compiler>
+		<member-generator.version>0.0.1-SNAPSHOT</member-generator.version>
+	</properties>
+	
+	<groupId>org.mittman.generator</groupId>
+	<artifactId>account-generator-dependencies</artifactId>
+	<version>0.0.1-ALL</version>
+	<packaging>pom</packaging>
+
+	<name>account-generator-dependencies</name>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.mittman.generator</groupId>
+				<artifactId>member-generator</artifactId>
+				<version>${member-generator.version}</version>
+			</dependency>
+		
+		
+		
+		
+			<!-- Commons -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.0</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+
+
+
+</project>

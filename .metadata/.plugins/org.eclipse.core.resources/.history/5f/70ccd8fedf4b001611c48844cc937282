@@ -1,0 +1,27 @@
+package org.mittman.generator.member;
+
+import java.io.Serializable;
+import java.time.LocalDate;
+
+import lombok.Data;
+
+/**
+ * Member information
+ * 
+ * @author Edward
+ *
+ */
+@Data
+public class Member implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	private Long id;
+
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	
+	private String ssn;
+	private LocalDate dateOfBirth;
+
+}
