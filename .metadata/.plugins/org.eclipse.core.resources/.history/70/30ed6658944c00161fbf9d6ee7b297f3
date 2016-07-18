@@ -1,0 +1,5 @@
+package org.mittman.generator.member;
+
+public class MemberData {
+
+}

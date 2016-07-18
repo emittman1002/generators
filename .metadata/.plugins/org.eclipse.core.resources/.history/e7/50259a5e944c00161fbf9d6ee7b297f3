@@ -1,0 +1,15 @@
+package org.mittman.generator.member;
+
+import java.util.Random;
+
+import lombok.Setter;
+
+public class MemberData {
+	@Setter
+	private Random random;
+	
+	public MemberData() {
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+package org.mittman.generator.member;
+
+import java.util.Random;
+
+import lombok.AccessLevel;
+import lombok.Setter;
+
+public class MemberData {
+	@Setter(AccessLevel.PACKAGE)
+	private Random random;
+	
+	private String []firstNames = {
+			"James",
+			"Aaron",
+			"Melinda",
+			"Xio Mi",
+			"Hector",
+			"Geraldine"
+	};
+	
+	private String []middletNames = {
+			null,
+			"H",
+			"B",
+			"T",
+			"A",
+			"L"
+	};
+	
+	private String []lastNames = {
+			"Addison",
+			"Smith",
+			"Kling",
+			"Labowski",
+			"Li",
+			"Rodriguez"
+	};
+
+	public MemberData() {
+		random = new Random();
+	}
+
+}

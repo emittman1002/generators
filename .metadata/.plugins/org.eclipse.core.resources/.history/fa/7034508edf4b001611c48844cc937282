@@ -1,7 +1,0 @@
-package org.mittman.generator.member;
-
-import java.io.Serializable;
-
-public class Member implements Serializable {
-
-}
