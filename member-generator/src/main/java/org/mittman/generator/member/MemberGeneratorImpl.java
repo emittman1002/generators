@@ -11,7 +11,7 @@ public class MemberGeneratorImpl implements MemberGenerator {
 
 	@Override
 	public String generateMiddleName() {
-		return "";
+		return null;
 	}
 
 	@Override
