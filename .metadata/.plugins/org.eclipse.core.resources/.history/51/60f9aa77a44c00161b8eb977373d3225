@@ -1,0 +1,67 @@
+package org.mittman.generator.member;
+
+import static org.junit.Assert.fail;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class MemberDataTest {
+	private MemberData memberData;
+	private Map<String, Object> resultMap;
+	
+
+	@Before
+	public void setUp() throws Exception {
+		// Initialize the data with a
+		// specific seed and generate
+		// expected values
+		memberData = new MemberData();
+		memberData.setRandom(new Random(1));
+		
+		resultMap = new HashMap<String, Object>();
+		resultMap.put("firstName", memberData.nextFirstName());
+		resultMap.put("middleName", memberData.nextMiddleName());
+		resultMap.put("lastName", memberData.nextLastName());
+		resultMap.put("ssn", memberData.nextSsn());
+		resultMap.put("dateOfBirth", memberData.nextDateOfBirth());
+		resultMap.put("gender", memberData.nextGender());
+		
+		// Reinitialize the random number generator
+		memberData.setRandom(new Random(1));
+	}
+
+	@Test
+	public void nextFirstNameGeneratesTheExpectedValue() {
+		
+	}
+
+	@Test
+	public void testNextMiddleName() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNextLastName() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNextSsn() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNextDateOfBirth() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNextGender() {
+		fail("Not yet implemented");
+	}
+
+}

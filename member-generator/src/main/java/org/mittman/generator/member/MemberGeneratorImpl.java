@@ -2,36 +2,45 @@ package org.mittman.generator.member;
 
 import java.time.LocalDate;
 
-public class MemberGeneratorImpl implements MemberGenerator {
+import lombok.Setter;
 
+public class MemberGeneratorImpl implements MemberGenerator {
+	@Setter
+	private MemberData data;
+	
+	
+	public MemberGeneratorImpl() {
+		data = new MemberData();
+	}
+	
 	@Override
 	public String generateFirstName() {
-		return "Fred";
+		return data.nextFirstName();
 	}
 
 	@Override
 	public String generateMiddleName() {
-		return null;
+		return data.nextMiddleName();
 	}
 
 	@Override
 	public String generateLastName() {
-		return "Smith";
+		return data.nextLastName();
 	}
 
 	@Override
 	public Gender generateGender() {
-		return Gender.MALE;
+		return data.nextGender();
 	}
 
 	@Override
 	public LocalDate generateDateOfBirth() {
-		return LocalDate.of(1988, 1, 1);
+		return data.nextDateOfBirth();
 	}
 
 	@Override
 	public String generateSsn() {
-		return "888-00-3456";
+		return data.nextSsn();
 	}
 
 	@Override

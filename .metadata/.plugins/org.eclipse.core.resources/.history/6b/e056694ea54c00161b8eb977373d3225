@@ -1,0 +1,110 @@
+package org.mittman.generator.member;
+
+import static org.junit.Assert.*;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class MemberDataTest {
+	private MemberData memberData;
+	private Map<String, Object> resultMap;
+	
+
+	@Before
+	public void setUp() throws Exception {
+		// Initialize the data with a
+		// specific seed and generate
+		// expected values
+		memberData = new MemberData();
+		memberData.setRandom(new Random(1));
+		
+		resultMap = new HashMap<String, Object>();
+		resultMap.put("firstName", memberData.nextFirstName());
+		resultMap.put("middleName", memberData.nextMiddleName());
+		resultMap.put("lastName", memberData.nextLastName());
+		resultMap.put("ssn", memberData.nextSsn());
+		resultMap.put("dateOfBirth", memberData.nextDateOfBirth());
+		resultMap.put("gender", memberData.nextGender());
+		
+		// Reinitialize the random number generator
+		memberData.setRandom(new Random(1));
+	}
+
+	@Test
+	public void nextFirstNameGeneratesTheExpectedValue() {
+		assertEquals(resultMap.get("firstName"), memberData.nextFirstName());
+	}
+	
+	@Test
+	public void nextFirstNameVariesTheGeneratedValue() {
+		memberData.nextFirstName();
+		
+		assertNotEquals(resultMap.get("firstName"), memberData.nextFirstName());
+	}
+	
+
+	@Test
+	public void nextMiddleNameGeneratesTheExpectedValue() {
+		assertEquals(resultMap.get("middleName"), memberData.nextMiddleName());
+	}
+	
+	@Test
+	public void nextMiddleNameVariesTheGeneratedValue() {
+		memberData.nextMiddleName();
+		
+		assertNotEquals(resultMap.get("middleName"), memberData.nextMiddleName());
+	}
+
+	@Test
+	public void nextLastNameGeneratesTheExpectedValue() {
+		assertEquals(resultMap.get("lastName"), memberData.nextLastName());
+	}
+	
+	@Test
+	public void nextLastNameVariesTheGeneratedValue() {
+		memberData.nextLastName();
+		
+		assertNotEquals(resultMap.get("lastName"), memberData.nextLastName());
+	}
+
+	@Test
+	public void nextSsnGeneratesTheExpectedValue() {
+		assertEquals(resultMap.get("ssn"), memberData.nextSsn());
+	}
+	
+	@Test
+	public void nextSsnVariesTheGeneratedValue() {
+		memberData.nextSsn();
+		
+		assertNotEquals(resultMap.get("ssn"), memberData.nextSsn());
+	}
+
+	@Test
+	public void nextDateOfBirthGeneratesTheExpectedValue() {
+		assertEquals(resultMap.get("dateOfBirth"), memberData.nextDateOfBirth());
+	}
+	
+	@Test
+	public void nextDateOfBirthVariesTheGeneratedValue() {
+		memberData.nextDateOfBirth();
+		
+		assertNotEquals(resultMap.get("dateOfBirth"), memberData.nextDateOfBirth());
+	}
+
+	@Test
+	public void nextGenderGeneratesTheExpectedValue() {
+		assertEquals(resultMap.get("gender"), memberData.nextGender());
+	}
+	
+	@Test
+	public void nextDateOfBirthVariesTheGeneratedValue() {
+		memberData.nextGender();
+		
+		assertNotEquals(resultMap.get("dateOfBirth"), memberData.nextGender());
+	}
+
+}
