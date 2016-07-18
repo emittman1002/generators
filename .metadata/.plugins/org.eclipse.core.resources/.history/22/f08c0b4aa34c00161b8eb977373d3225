@@ -1,0 +1,44 @@
+package org.mittman.generator.member;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class MemberDataTest {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Test
+	public void testNextFirstName() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNextMiddleName() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNextLastName() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNextSsn() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNextDateOfBirth() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNextGender() {
+		fail("Not yet implemented");
+	}
+
+}

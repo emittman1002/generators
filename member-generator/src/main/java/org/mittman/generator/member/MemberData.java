@@ -86,4 +86,15 @@ public class MemberData {
 		return LocalDate.ofYearDay(yr, dayOfYear);
 	}
 	
+	private Gender []genders;
+	public Gender nextGender() {
+		if (genders==null) {
+			genders = Gender.values();
+		}
+		
+		int idx = random.nextInt(genders.length);
+		
+		return genders[idx];
+	}
+	
 }

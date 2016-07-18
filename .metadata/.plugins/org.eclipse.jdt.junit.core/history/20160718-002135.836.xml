@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MemberDataTest" project="member-generator" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="org.mittman.generator.member.MemberDataTest" time="0.08">
+    <testcase name="nextMiddleNameVariesTheGeneratedValue" classname="org.mittman.generator.member.MemberDataTest" time="0.0"/>
+    <testcase name="nextSsnVariesTheGeneratedValue" classname="org.mittman.generator.member.MemberDataTest" time="0.0"/>
+    <testcase name="nextFirstNameVariesTheGeneratedValue" classname="org.mittman.generator.member.MemberDataTest" time="0.0"/>
+    <testcase name="nextDateOfBirthVariesTheGeneratedValue" classname="org.mittman.generator.member.MemberDataTest" time="0.078"/>
+    <testcase name="nextLastNameVariesTheGeneratedValue" classname="org.mittman.generator.member.MemberDataTest" time="0.0"/>
+    <testcase name="nextGenderVariesTheGeneratedValue" classname="org.mittman.generator.member.MemberDataTest" time="0.001"/>
+  </testsuite>
+</testrun>
