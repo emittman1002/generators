@@ -2,5 +2,5 @@
 
 **/*.class
 **/*.log
-**/RemoteSystemsTempFiles/
-
+RemoteSystemsTempFiles/
+.metadata/.plugins/org.eclipse.m2e.core/nexus/
